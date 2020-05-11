@@ -16,8 +16,8 @@ mongo_hacker_config = {
   indent:         2,                // number of spaces for indent
   sort_keys:      false,            // sort the keys in documents when displayed
   uuid_type:      'default',        // 'java', 'c#', 'python' or 'default'
-  banner_message: 'Mongo-Hacker ',  // banner message
-  version:        '0.1.1',          // current mongo-hacker version
+  banner_message: 'Mongo-Shell-Hacks ',  // banner message
+  version:        '0.1.19',          // current mongo-hacker version
   show_banner:     true,            // show mongo-hacker version banner on startup
   use_color:       true,            // use color highlighting if possible
   force_color:     false,           // force color even if Mongo Hacker thinks it won't work
@@ -34,14 +34,14 @@ mongo_hacker_config = {
   // Shell Color Settings
   // Colors available: red, green, yellow, blue, magenta, cyan
   colors: {
-    'key':       { color: 'gray' },
-    'number':    { color: 'red' },
+    'key':       { color: 'green'},
+    'number':    { color: 'yellow' },
     'boolean':   { color: 'blue', bright: true },
     'null':      { color: 'red', bright: true },
     'undefined': { color: 'magenta', bright: true },
-    'objectid':  { color: 'yellow', underline: true },
-    'string':    { color: 'green' },
-    'binData':   { color: 'green', bright: true },
+    'objectid':  { color: 'cyan', underline: true },
+    'string':    { color: 'magenta' },
+    'binData':   { color: 'red', bright: true },
     'function':  { color: 'magenta' },
     'date':      { color: 'blue' },
     'uuid':      { color: 'cyan' },

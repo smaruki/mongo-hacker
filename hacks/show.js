@@ -6,6 +6,13 @@ shellHelper.show = function () {
 
         if (what == "collections" || what == "tables") {
             var collectionNames = db.getCollectionNames();
+            collectionNames = colorizeAll(collectionNames, mongo_hacker_config['colors']['collectionNames']);
+            printPaddedColumns(collectionNames);
+            return "";
+        }
+
+        if (what == "collections size" || what == "tables size") {
+            var collectionNames = db.getCollectionNames();
             var collectionStats = collectionNames.map(function (name) {
                 var stats = db.getCollection(name).stats();
                 if (stats.ok) {
