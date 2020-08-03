@@ -34,16 +34,16 @@ mongo_hacker_config = {
   // Shell Color Settings
   // Colors available: red, green, yellow, blue, magenta, cyan
   colors: {
-    'key':       { color: 'green'},
+    'key':       { color: 'blue' },
     'number':    { color: 'yellow' },
-    'boolean':   { color: 'blue', bright: true },
+    'boolean':   { color: 'red', bright: true },
     'null':      { color: 'red', bright: true },
     'undefined': { color: 'magenta', bright: true },
     'objectid':  { color: 'cyan', underline: true },
     'string':    { color: 'magenta' },
     'binData':   { color: 'red', bright: true },
     'function':  { color: 'magenta' },
-    'date':      { color: 'blue' },
+    'date':      { color: 'green' },
     'uuid':      { color: 'cyan' },
     'databaseNames':   { color: 'green', bright: true },
     'collectionNames': { color: 'blue',  bright: true }
